@@ -48,7 +48,7 @@ ROOT_URLCONF = "jntuhresults.urls"
 CORS_ALLOWED_ORIGINS = [
   
     "https://itsengineering.vercel.app/",
-   
+    "https://itsengineering.vercel.app/results",
     "http://localhost:5173/",
     "https://itsengineering.in/",
 ]
