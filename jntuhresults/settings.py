@@ -47,9 +47,8 @@ MIDDLEWARE = [
 ROOT_URLCONF = "jntuhresults.urls"
 CORS_ALLOWED_ORIGINS = [
   
-    "http://localhost:3000",
-    "http://127.0.0.1:8000/",
-    "http://192.168.29.188:5173/",
+    "https://itsengineering.vercel.app/",
+   
     "http://localhost:5173/",
     "https://itsengineering.in/",
 ]
