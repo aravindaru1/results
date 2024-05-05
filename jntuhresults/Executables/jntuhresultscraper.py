@@ -10,8 +10,8 @@ class ResultScraper:
     def __init__(self, roll_number, url_index=0):
         # Initialize instance variables
         urls = [
-            "http://results.jntuh.ac.in/resultAction",
             "http://202.63.105.184/resultAction",
+            "http://results.jntuh.ac.in/resultAction",
         ]
         self.url = urls[url_index]
         self.roll_number = roll_number
@@ -33,6 +33,7 @@ class ResultScraper:
                         "1658",
                         "1700",
                         "1732",
+                        "1764",
                     ],
                     "1-2": [
                         "1356",
@@ -48,6 +49,7 @@ class ResultScraper:
                         "1656",
                         "1705",
                         "1730",
+                        "1769",
                     ],
                     "2-1": [
                         "1391",
@@ -61,6 +63,7 @@ class ResultScraper:
                         "1671",
                         "1707",
                         "1728",
+                        "1772",
                     ],
                     "2-2": [
                         "1437",
@@ -74,6 +77,7 @@ class ResultScraper:
                         "1711",
                         "1715",
                         "1725",
+                        "1776",
                     ],
                     "3-1": [
                         "1454",
@@ -87,6 +91,7 @@ class ResultScraper:
                         "1686",
                         "1697",
                         "1722",
+                        "1784",
                     ],
                     "3-2": [
                         "1502",
@@ -100,6 +105,7 @@ class ResultScraper:
                         "1690",
                         "1696",
                         "1719",
+                        "1780",
                     ],
                     "4-1": [
                         "1545",
@@ -112,6 +118,7 @@ class ResultScraper:
                         "1695",
                         "1717",
                         "1758",
+                        "1762",
                     ],
                     "4-2": [
                         "1580",
@@ -125,7 +132,11 @@ class ResultScraper:
                         "1716",
                     ],
                 },
-                "R22": {"1-1": ["1662", "1699"], "1-2": ["1704"]},
+                "R22": {
+                    "1-1": ["1662", "1699", "1763"],
+                    "1-2": ["1704", "1768"],
+                    "2-1": ["1771"],
+                },
             },
             "bpharmacy": {
                 "R17": {
@@ -142,6 +153,7 @@ class ResultScraper:
                         "832",
                         "855",
                         "893",
+                        "936",
                     ],
                     "1-2": [
                         "517",
@@ -157,6 +169,7 @@ class ResultScraper:
                         "831",
                         "853",
                         "890",
+                        "933",
                     ],
                     "2-1": [
                         "532",
@@ -182,8 +195,19 @@ class ResultScraper:
                         "845",
                         "882",
                         "897",
+                        "940",
                     ],
-                    "3-1": ["597", "633", "668", "712", "759", "799", "837", "873"],
+                    "3-1": [
+                        "597",
+                        "633",
+                        "668",
+                        "712",
+                        "759",
+                        "799",
+                        "837",
+                        "873",
+                        "928",
+                    ],
                     "3-2": [
                         "655",
                         "660",
@@ -194,33 +218,62 @@ class ResultScraper:
                         "841",
                         "869",
                         "877",
+                        "924",
                     ],
                     "4-1": ["663", "705", "754", "794", "832", "836", "865", "920"],
                     "4-2": ["678", "700", "789", "809", "861", "878"],
                 },
-                "R22": {"1-1": ["859", "892"], "1-2": ["898"]},
-            },
-            "mpharmacy": {
-                "R19": {
-                    "1-1": ["319", "332", "347", "356", "371", "382", "388", "395"],
-                    "1-2": ["328", "336", "344", "353", "368", "379", "387", "393"],
-                    "2-1": ["337", "350", "365", "376", "386", "391"],
-                    "2-2": ["340", "374", "385", "390"],
+                "R22": {
+                    "1-1": ["859", "892", "935"],
+                    "1-2": ["898", "932"],
+                    "2-1": ["945"],
                 },
-                "R22": {"1-1": ["389", "394"], "1-2": ["392"]},
             },
             "mtech": {
                 "R19": {
+                    "1-1": [
+                        "319",
+                        "332",
+                        "347",
+                        "356",
+                        "371",
+                        "382",
+                        "388",
+                        "395",
+                        "414",
+                    ],
+                    "1-2": [
+                        "328",
+                        "336",
+                        "344",
+                        "353",
+                        "368",
+                        "379",
+                        "387",
+                        "393",
+                        "412",
+                    ],
+                    "2-1": ["337", "350", "365", "376", "386", "391", "410"],
+                    "2-2": ["340", "374", "385", "390"],
+                },
+                "R22": {
+                    "1-1": ["389", "394", "413"],
+                    "1-2": ["392", "411"],
+                    "2-1": ["409"],
+                },
+            },
+            "mpharmacy": {
+                "R19": {
                     "1-1": ["161", "177", "185", "198", "209", "215", "222"],
                     "1-2": ["157", "165", "174", "182", "195", "206", "214", "220"],
-                    "2-1": ["166", "180", "194", "204", "213", "218"],
+                    "2-1": ["166", "180", "194", "204", "213", "218", "236"],
                     "2-2": ["169", "203", "212", "217"],
                 },
-                "R22": {"1-1": ["216", "221"], "1-2": ["219"]},
+                "R22": {"1-1": ["216", "221"], "1-2": ["219", "237"], "2-1": ["235"]},
             },
             "mba": {
                 "R19": {
-                    "1-1": ["297", "316", "323", "350", "362", "368", "374"],
+                    "1-1": ["297", "316", "323", "350", "362", "368", "374", "405"],
                     "1-2": [
                         "122",
                         "293",
@@ -231,11 +284,16 @@ class ResultScraper:
                         "359",
                         "367",
                         "372",
+                        "403",
                     ],
-                    "2-1": ["303", "310", "344", "356", "366", "376"],
-                    "2-2": ["120", "307", "341", "353", "365", "375"],
+                    "2-1": ["303", "310", "344", "356", "366", "376", "401"],
+                    "2-2": ["120", "307", "341", "353", "365", "375", "399"],
                 },
-                "R22": {"1-1": ["369", "373"], "1-2": ["371"]},
+                "R22": {
+                    "1-1": ["369", "373", "404"],
+                    "1-2": ["371", "402"],
+                    "2-1": "400",
+                },
             },
         }
 
@@ -363,12 +421,12 @@ class ResultScraper:
 
             # Store Subject details in results dictionary
             self.results["Results"][semester_code][subject_code] = {}
-            self.results["Results"][semester_code][subject_code][
-                "subject_code"
-            ] = subject_code
-            self.results["Results"][semester_code][subject_code][
-                "subject_name"
-            ] = subject_name
+            self.results["Results"][semester_code][subject_code]["subject_code"] = (
+                subject_code
+            )
+            self.results["Results"][semester_code][subject_code]["subject_name"] = (
+                subject_name
+            )
             try:
                 self.results["Results"][semester_code][subject_code][
                     "subject_internal"
@@ -381,12 +439,12 @@ class ResultScraper:
                 ] = subject_total_marks
             except Exception as e:
                 print(self.roll_number, e)
-            self.results["Results"][semester_code][subject_code][
-                "subject_grade"
-            ] = subject_grade
-            self.results["Results"][semester_code][subject_code][
-                "subject_credits"
-            ] = subject_credits
+            self.results["Results"][semester_code][subject_code]["subject_grade"] = (
+                subject_grade
+            )
+            self.results["Results"][semester_code][subject_code]["subject_credits"] = (
+                subject_credits
+            )
 
     # Calculate the total cgpa of each semester
     def total_grade_calculator(self, code, value):
@@ -426,7 +484,8 @@ class ResultScraper:
                 # Determine the exam codes based on the roll number prefix
                 exam_codes = self.exam_codes["btech"][
                     "R22"
-                    if (graduationStart >= 22 and self.roll_number[4] != "5")
+                    if graduationStart >= 23
+                    or (graduationStart == 22 and self.roll_number[4] != "5")
                     else "R18"
                 ]
 
@@ -436,7 +495,8 @@ class ResultScraper:
                 # Set the exam codes for bpharmacy
                 exam_codes = self.exam_codes["bpharmacy"][
                     "R22"
-                    if (graduationStart >= 22 and self.roll_number[4] != "5")
+                    if graduationStart >= 23
+                    or (graduationStart == 22 and self.roll_number[4] != "5")
                     else "R17"
                 ]
 
