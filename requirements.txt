@@ -11,7 +11,7 @@ gevent==22.10.2
 greenlet==2.0.2
 gunicorn==20.1.0
 idna==3.4
-lxml==4.9.2
+lxml
 multidict==6.0.2
 nest-asyncio==1.5.5
 pycparser==2.21
